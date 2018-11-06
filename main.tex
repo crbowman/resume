@@ -1,0 +1,241 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{custom} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\photo[70pt][0.4pt]{profile1}
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage[scale=0.77, top=0.3in, bottom=1in]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Curtis} % Your first name
+\familyname{Bowman} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Back-End Developer}
+%\address{4404 Glen Haven Dr.}{Concord, NC 28027}
+\email{curtis@partiallyapplied.io}
+\homepage{partiallyapplied.io}{partiallyapplied.io}
+\github{http://www.github.com/crbowman}{github.com/crbowman}
+\linkedin{http://www.linkedin.com/in/curtis-bowman}{linkedin.com/in/curtis-bowman}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{profile_pic} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+
+%----------------------------------------------------------------------------------------
+%	Summary
+%----------------------------------------------------------------------------------------
+\begin{minipage}[t]{0.17\textwidth}
+    \begin{itemize}
+        \item[] 
+    \end{itemize}
+\end{minipage}
+\begin{minipage}[c]{0.80\textwidth}
+\begin{center}
+ \itshape Back-End Engineer with hands-on experience in all levels of the software development life-cycle. Passionate about building scalable and extensible systems through functional programming principles. Proven ability to learn new technologies and concepts, communicate complex ideas clearly, and adapt quickly to changing requirements. Self-motivated and willing to take ownership of a project, keeping it moving forward with minimal oversight. 
+\end{center}
+\end{minipage}
+\begin{minipage}[t]{0.17\textwidth}
+    \begin{itemize}
+        \item[] 
+    \end{itemize}
+\end{minipage}
+\vspace{0.5em}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Skills
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{minipage}[t]{0.13\textwidth}
+    \begin{itemize}
+        \item[] 
+    \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.29\textwidth}
+    \begin{itemize}
+        \item[] \begin{center} \textbf{Functional \\ Programming} \end{center}
+        \item[] \small Capable of programming in a functional style in both functional and non-functional languages
+    \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.29\textwidth}
+    \begin{itemize}
+        \item[] \begin{center} \textbf{Natural Language Processing} \end{center}      
+        \item[] \small Track record of using NLP techniques to provide measurable results that enhance user experience.
+    \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.29\textwidth}
+    \begin{itemize}
+        \item[] \begin{center} \textbf{Problem \\ Solving} \end{center}
+        \item[] \small Proven ability to provide solutions to complex problems while learning new concepts and technologies on the job.
+    \end{itemize}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	Technologies
+%----------------------------------------------------------------------------------------
+\section{Technologies}
+%triple itemize
+
+\begin{minipage}[t]{0.16\textwidth}
+    \begin{itemize}
+        \item[]
+    \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.28\textwidth}
+    \begin{itemize}[label=$-$]
+        \setlength\itemsep{-0.5em}
+        \item Clojure
+        \item ClojureSript
+        \item Python
+        \item Emacs-Lisp
+    \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.28\textwidth}
+    \begin{itemize}[label=$-$]
+        \setlength\itemsep{-0.5em}
+        \item NLTK
+        \item Scikit-Learn
+        \item Flask
+        \item Reagent
+    \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.28\textwidth}
+    \begin{itemize}[label=$-$]
+        \setlength\itemsep{-0.5em}
+        \item Linux
+        \item Git
+        \item Docker
+        \item Vagrant
+    \end{itemize}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\cventry{Apr--Dec 2015}{Data Science Contractor}{\textsc{Shoeboxed}}
+{Durham}{NC}{
+\begin{itemize}[label=$-$]
+\item Designed and implemented a named entity recognition pipeline capable of tagging vendor names, product descriptions, and prices in receipt documents with an F1-score greater than 0.97. 
+\item Developed an internal tool using Python, Flask, and AngularJS that allowed non-technical employees to tag product, price, and vendor entities in receipt documents at an average rate of over 200 documents per hour. Using this tool we were able to create a corpus of 10,000 documents to train supervised learning models on. 
+\end{itemize}
+}
+
+\cventry{May--Oct, 2012}{Machine Learning Intern}{\textsc{Shoeboxed}}
+{Durham}{NC}{
+\begin{itemize}[label=$-$]
+    \item Developed a proof of concept named entity recognition model capable of extracting product descriptions from email receipts with an F1 score greater than 0.93. 
+    \item Trained a prototype classification model capable of identifying email receipts in a users inbox. Following my internship, this classifier would be adapted for use in a Gmail plugin allowing users to have their email receipts automatically imported into their account.
+    \item Designed and Deployed an internal API using Python, Flask, and deployed on Heroku that allowed anyone in the company to test various machine learning models on their personal receipts. This provided user feedback that was crucial in developing models that would provide the most value to our customers.
+\end{itemize}
+}
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2008--2012, 2015}{University of North Carolina, Chapel Hill}{Computer Science \& Philosophy}{}{}{
+\begin{minipage}[t]{0.05\textwidth}
+ \begin{itemize}[label={}]
+        \item
+    \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.6\textwidth}
+    \begin{itemize}[label=$-$]
+        \item \textbf{President,} \textit{UNC Philosophy Club}
+    \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.1\textwidth}
+ \begin{itemize}[label={}]
+        \item
+    \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.2\textwidth}
+    \begin{itemize}[label={}]
+        \item \textmd{2010--2011}
+    \end{itemize}
+\end{minipage}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
